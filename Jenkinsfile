@@ -10,7 +10,7 @@ pipeline {
            stage('Example') {
                 steps {
                     script {
-                    common.sayHello('World')
+                     echo  '-------World+++++++'；
                     }
                 }
           }
