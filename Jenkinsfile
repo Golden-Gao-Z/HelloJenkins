@@ -13,7 +13,8 @@ pipeline {
                     echo 'stage-1'
                     bat 'powershell Write-Output "123456"'
                     bat 'powershell Get-Location'
-                        
+                    bat 'dotnet restore ./HelloJenkins/Hellojenkins.sln '
+                    bat "D:\software_app\'Microsoft Visual Studio'\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe HelloJenkins\HelloJenkins\Hellojenkins.csproj /p:Configuration=Release "
                     }
                 }
           }
