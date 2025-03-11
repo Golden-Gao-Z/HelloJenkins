@@ -11,6 +11,7 @@ pipeline {
                 steps {
                     script {
                     echo 'stage-1'
+                    bat 'Write-Output "123456"'
                     }
                 }
           }
