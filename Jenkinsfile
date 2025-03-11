@@ -7,10 +7,17 @@ pipeline {
     }
 
     stages {
-           stage('Example') {
+           stage('stage-1') {
                 steps {
                     script {
-                     sh  'echo  "1234"'
+                    echo 'stage-1'
+                    }
+                }
+          }
+                   stage('stage-2') {
+                steps {
+                    script {
+                     echo 'stage-2'
                     }
                 }
           }
