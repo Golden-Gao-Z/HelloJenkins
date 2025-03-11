@@ -10,7 +10,7 @@ pipeline {
            stage('Example') {
                 steps {
                     script {
-                     echo  '-------World+++++++';
+                     sh  'echo  "1234"'
                     }
                 }
           }
