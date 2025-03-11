@@ -12,6 +12,8 @@ pipeline {
                     script {
                     echo 'stage-1'
                     bat 'powershell Write-Output "123456"'
+                    bat 'powershell Get-Location'
+                        
                     }
                 }
           }
